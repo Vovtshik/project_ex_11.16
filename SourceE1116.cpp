@@ -32,7 +32,7 @@ void formatted_output_file(string& name_file, vector<double>&vn)
 {
     ofstream ost{name_file};
    if (!ost) error("Unable to open output file ", name_file);
-   ost << scientific << setprecision(8);
+   //ost << scientific << setprecision(8);
    int amount = 1;
    double temp = vn[0];
    for(int i = 1; i < vn.size(); ++i)
